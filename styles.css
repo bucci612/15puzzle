@@ -1,0 +1,57 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #4a4a4a; /* 背景色を変更 */
+  font-family: "Arial", sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: white; /* ヘッダーの文字色を変更 */
+}
+
+#puzzle-board {
+  display: grid;
+  gap: 5px;
+  margin-bottom: 20px; /* ボタンとパズルの間隔を調整 */
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cornflowerblue;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.empty {
+  background-color: white;
+  cursor: default;
+}
+
+button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #f9a826; /* ボタンの色を変更 */
+  border: none;
+  color: white; /* ボタンの文字色を変更 */
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f8b53d; /* ボタンのホバー色を変更 */
+}
+
+#level-buttons {
+  display: flex;
+  gap: 10px;
+}
